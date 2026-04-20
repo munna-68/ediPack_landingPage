@@ -10,6 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const scrollGroups = Array.from(
     document.querySelectorAll("[data-scroll-reveal]"),
   );
+  const menuToggle = document.querySelector(".menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const mobileMenuClose = document.querySelector(".mobile-menu-close");
   const reducedMotionQuery = window.matchMedia(
     "(prefers-reduced-motion: reduce)",
   );
@@ -47,6 +50,60 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  function setMenuState(isOpen) {
+    if (!menuToggle || !mobileMenu) {
+      return;
+    }
+
+    mobileMenu.hidden = !isOpen;
+    document.body.classList.toggle("menu-open", isOpen);
+    menuToggle.classList.toggle("is-active", isOpen);
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+  }
+
+  if (menuToggle && mobileMenu) {
+    menuToggle.addEventListener("click", () => {
+      const shouldOpen = !document.body.classList.contains("menu-open");
+      setMenuState(shouldOpen);
+    });
+
+    mobileMenu.addEventListener("click", (event) => {
+      if (event.target === mobileMenu) {
+        setMenuState(false);
+      }
+    });
+
+    mobileMenu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        setMenuState(false);
+      });
+    });
+
+    if (mobileMenuClose) {
+      mobileMenuClose.addEventListener("click", () => {
+        setMenuState(false);
+      });
+    }
+
+    document.addEventListener("keydown", (event) => {
+      if (
+        event.key === "Escape" &&
+        document.body.classList.contains("menu-open")
+      ) {
+        setMenuState(false);
+      }
+    });
+
+    window.addEventListener("resize", () => {
+      if (
+        window.innerWidth > 768 &&
+        document.body.classList.contains("menu-open")
+      ) {
+        setMenuState(false);
+      }
+    });
+  }
+
   function finishAll() {
     document.querySelectorAll(".reveal-box").forEach((box) => {
       box.style.transform = "translate3d(-101%, 0, 0)";
@@ -65,6 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   if (reducedMotionQuery.matches) {
+    setMenuState(false);
     finishAll();
     return;
   }
