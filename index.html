@@ -13,22 +13,84 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+      <span class="text-mask preloader-label">
+        <span id="preloader-box" class="reveal-box preloader-reveal-box"></span>
+        <span class="reveal-copy">Presenting</span>
+      </span>
+    </div>
+
     <!-- Header / Navigation -->
-    <header>
+    <header data-load-reveal>
       <div class="logo">
         <img src="images/logo-2x.png" alt="EdiPack Logo" />
       </div>
       <nav>
         <ul>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#products">Products</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#faq">FAQ</a></li>
+          <li>
+            <a href="#about">
+              <span class="text-mask nav-mask">
+                <span
+                  class="reveal-box"
+                  data-start="0.0"
+                  data-end="0.38"
+                ></span>
+                <span class="reveal-copy">About Us</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#products">
+              <span class="text-mask nav-mask">
+                <span
+                  class="reveal-box"
+                  data-start="0.08"
+                  data-end="0.46"
+                ></span>
+                <span class="reveal-copy">Products</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#services">
+              <span class="text-mask nav-mask">
+                <span
+                  class="reveal-box"
+                  data-start="0.16"
+                  data-end="0.54"
+                ></span>
+                <span class="reveal-copy">Services</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#faq">
+              <span class="text-mask nav-mask">
+                <span
+                  class="reveal-box"
+                  data-start="0.24"
+                  data-end="0.62"
+                ></span>
+                <span class="reveal-copy">FAQ</span>
+              </span>
+            </a>
+          </li>
         </ul>
       </nav>
       <div class="header-actions">
-        <a href="#contact" class="btn">Contact</a>
-        <a href="#signup" class="btn btn-primary">Sign Up</a>
+        <a href="#contact" class="btn">
+          <span class="text-mask button-mask">
+            <span class="reveal-box" data-start="0.0" data-end="0.42"></span>
+            <span class="reveal-copy">Contact</span>
+          </span>
+        </a>
+        <a href="#signup" class="btn btn-primary">
+          <span class="text-mask button-mask">
+            <span class="reveal-box" data-start="0.12" data-end="0.54"></span>
+            <span class="reveal-copy">Sign Up</span>
+          </span>
+        </a>
       </div>
     </header>
 
@@ -37,15 +99,59 @@
       <!-- Hero Section -->
       <section class="hero">
         <div class="hero-container">
-          <div class="hero-content">
-            <h1>Join the Green Revolution with EdiPack</h1>
-            <p>
-              Discover our eco-friendly, durable, and compostable food
-              containers that make a difference in the world.
+          <div class="hero-content" data-load-reveal>
+            <h1 class="hero-title">
+              <span class="text-mask hero-line">
+                <span
+                  class="reveal-box"
+                  data-start="0.0"
+                  data-end="0.42"
+                ></span>
+                <span class="reveal-copy">Join the Green Revolution</span>
+              </span>
+              <span class="text-mask hero-line">
+                <span
+                  class="reveal-box"
+                  data-start="0.12"
+                  data-end="0.6"
+                ></span>
+                <span class="reveal-copy">with EdiPack</span>
+              </span>
+            </h1>
+            <p class="hero-subcopy">
+              <span class="text-mask text-mask-fluid">
+                <span
+                  class="reveal-box"
+                  data-start="0.4"
+                  data-end="0.92"
+                ></span>
+                <span class="reveal-copy">
+                  Discover our eco-friendly, durable, and compostable food
+                  containers that make a difference in the world.
+                </span>
+              </span>
             </p>
             <div class="hero-buttons">
-              <a href="#learn-more" class="btn btn-primary">Learn More</a>
-              <a href="#signup" class="btn btn-outline">Sign Up</a>
+              <a href="#learn-more" class="btn btn-primary">
+                <span class="text-mask button-mask">
+                  <span
+                    class="reveal-box"
+                    data-start="0.0"
+                    data-end="0.44"
+                  ></span>
+                  <span class="reveal-copy">Learn More</span>
+                </span>
+              </a>
+              <a href="#signup" class="btn btn-outline">
+                <span class="text-mask button-mask">
+                  <span
+                    class="reveal-box"
+                    data-start="0.14"
+                    data-end="0.58"
+                  ></span>
+                  <span class="reveal-copy">Sign Up</span>
+                </span>
+              </a>
             </div>
           </div>
         </div>
@@ -55,105 +161,322 @@
       </section>
 
       <!-- Feature Section 1 -->
-      <section class="feature-dark">
+      <section
+        class="feature-dark"
+        data-scroll-reveal
+        data-reveal-duration="1250"
+      >
         <div class="feature-text">
           <h2>
-            EdiPack: The Eco-Friendly Solution for Sustainable Food Packaging
+            <span class="text-mask text-mask-fluid">
+              <span class="reveal-box" data-start="0.0" data-end="0.55"></span>
+              <span class="reveal-copy">
+                EdiPack: The Eco-Friendly Solution for Sustainable Food
+                Packaging
+              </span>
+            </span>
           </h2>
           <p>
-            Discover the innovative design and usability of EdiPack containers.
-            Made from compostable materials, they not only reduce waste but also
-            enrich soil after use.
+            <span class="text-mask text-mask-fluid">
+              <span class="reveal-box" data-start="0.22" data-end="0.9"></span>
+              <span class="reveal-copy">
+                Discover the innovative design and usability of EdiPack
+                containers. Made from compostable materials, they not only
+                reduce waste but also enrich soil after use.
+              </span>
+            </span>
           </p>
         </div>
       </section>
 
       <!-- Product Highlight Image -->
-      <section class="product-highlight">
-        <img src="images/box-with-lid-on_2x.jpg" alt="Blue EdiPack container" />
+      <section
+        class="product-highlight"
+        data-scroll-reveal
+        data-reveal-duration="1050"
+      >
+        <div class="media-mask">
+          <span class="reveal-box" data-start="0.0" data-end="0.72"></span>
+          <img
+            src="images/box-with-lid-on_2x.jpg"
+            alt="Blue EdiPack container"
+          />
+        </div>
       </section>
 
       <!-- Feature Section 2 -->
-      <section class="feature-light">
-        <h2>Join the Green Revolution</h2>
+      <section
+        class="feature-light"
+        data-scroll-reveal
+        data-reveal-duration="1200"
+      >
+        <h2>
+          <span class="text-mask text-mask-fluid">
+            <span class="reveal-box" data-start="0.0" data-end="0.48"></span>
+            <span class="reveal-copy">Join the Green Revolution</span>
+          </span>
+        </h2>
         <p>
-          Explore our eco-friendly and compostable food containers that make a
-          positive impact on the environment.
+          <span class="text-mask text-mask-fluid">
+            <span class="reveal-box" data-start="0.2" data-end="0.86"></span>
+            <span class="reveal-copy">
+              Explore our eco-friendly and compostable food containers that make
+              a positive impact on the environment.
+            </span>
+          </span>
         </p>
         <div class="feature-buttons">
-          <a href="#learn-more" class="btn btn-primary">Learn More</a>
-          <a href="#signup" class="btn btn-outline">Sign Up</a>
+          <a href="#learn-more" class="btn btn-primary">
+            <span class="text-mask button-mask">
+              <span class="reveal-box" data-start="0.0" data-end="0.44"></span>
+              <span class="reveal-copy">Learn More</span>
+            </span>
+          </a>
+          <a href="#signup" class="btn btn-outline">
+            <span class="text-mask button-mask">
+              <span class="reveal-box" data-start="0.14" data-end="0.58"></span>
+              <span class="reveal-copy">Sign Up</span>
+            </span>
+          </a>
         </div>
       </section>
 
       <!-- Feature Section 3 (Split Layout) -->
-      <section class="feature-split">
+      <section
+        class="feature-split"
+        data-scroll-reveal
+        data-reveal-duration="1650"
+      >
         <div class="feature-split-container">
           <div class="feature-content-left">
             <div class="feature-block">
-              <h3>Eco-friendly Packaging Solution</h3>
+              <h3>
+                <span class="text-mask text-mask-fluid">
+                  <span
+                    class="reveal-box"
+                    data-start="0.0"
+                    data-end="0.32"
+                  ></span>
+                  <span class="reveal-copy"
+                    >Eco-friendly Packaging Solution</span
+                  >
+                </span>
+              </h3>
               <p>
-                EdiPack offers a range of eco-friendly, durable, and compostable
-                food containers. Join the green revolution and make a difference
-                with our sustainable packaging solution.
+                <span class="text-mask text-mask-fluid">
+                  <span
+                    class="reveal-box"
+                    data-start="0.08"
+                    data-end="0.45"
+                  ></span>
+                  <span class="reveal-copy">
+                    EdiPack offers a range of eco-friendly, durable, and
+                    compostable food containers. Join the green revolution and
+                    make a difference with our sustainable packaging solution.
+                  </span>
+                </span>
               </p>
             </div>
             <div class="feature-block">
-              <h3>High-Quality Materials</h3>
+              <h3>
+                <span class="text-mask text-mask-fluid">
+                  <span
+                    class="reveal-box"
+                    data-start="0.22"
+                    data-end="0.56"
+                  ></span>
+                  <span class="reveal-copy">High-Quality Materials</span>
+                </span>
+              </h3>
               <p>
-                Our food containers are made from high-quality compostable
-                materials, ensuring both functionality and sustainability.
+                <span class="text-mask text-mask-fluid">
+                  <span
+                    class="reveal-box"
+                    data-start="0.3"
+                    data-end="0.66"
+                  ></span>
+                  <span class="reveal-copy">
+                    Our food containers are made from high-quality compostable
+                    materials, ensuring both functionality and sustainability.
+                  </span>
+                </span>
               </p>
             </div>
             <div class="feature-block">
-              <h3>Versatile Design</h3>
+              <h3>
+                <span class="text-mask text-mask-fluid">
+                  <span
+                    class="reveal-box"
+                    data-start="0.42"
+                    data-end="0.78"
+                  ></span>
+                  <span class="reveal-copy">Versatile Design</span>
+                </span>
+              </h3>
               <p>
-                With a versatile design, our containers are suitable for various
-                food types and can be used for both hot and cold items.
+                <span class="text-mask text-mask-fluid">
+                  <span
+                    class="reveal-box"
+                    data-start="0.55"
+                    data-end="0.94"
+                  ></span>
+                  <span class="reveal-copy">
+                    With a versatile design, our containers are suitable for
+                    various food types and can be used for both hot and cold
+                    items.
+                  </span>
+                </span>
               </p>
             </div>
           </div>
           <div class="feature-image-right">
-            <img
-              src="images/box-with-lid-open_2x.jpg"
-              alt="EdiPack container with healthy food"
-            />
+            <div class="media-mask">
+              <span class="reveal-box" data-start="0.16" data-end="0.84"></span>
+              <img
+                src="images/box-with-lid-open_2x.jpg"
+                alt="EdiPack container with healthy food"
+              />
+            </div>
           </div>
         </div>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer data-scroll-reveal data-reveal-duration="1300">
       <div class="footer-top">
         <div class="footer-brand">
           <img src="images/logo-2x.png" alt="EdiPack Logo" />
           <p class="brand-slogan">
-            Good For People<br />Good For The Planet<br />Good For You.
+            <span class="text-mask text-mask-fluid">
+              <span class="reveal-box" data-start="0.0" data-end="0.55"></span>
+              <span class="reveal-copy"
+                >Good For People<br />Good For The Planet<br />Good For
+                You.</span
+              >
+            </span>
           </p>
         </div>
 
         <div class="footer-links">
           <ul>
-            <li><a href="#">Link One</a></li>
-            <li><a href="#">Link One</a></li>
-            <li><a href="#">Link One</a></li>
-            <li><a href="#">Link One</a></li>
-            <li><a href="#">Link One</a></li>
-            <li><a href="#">Link One</a></li>
-            <li><a href="#">Link One</a></li>
+            <li>
+              <a href="#about">
+                <span class="text-mask nav-mask">
+                  <span class="reveal-box" data-start="0.02" data-end="0.34"></span>
+                  <span class="reveal-copy">About EdiPack</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#mission">
+                <span class="text-mask nav-mask">
+                  <span class="reveal-box" data-start="0.08" data-end="0.4"></span>
+                  <span class="reveal-copy">Our Mission</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#sustainability">
+                <span class="text-mask nav-mask">
+                  <span class="reveal-box" data-start="0.14" data-end="0.46"></span>
+                  <span class="reveal-copy">Sustainability</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#materials">
+                <span class="text-mask nav-mask">
+                  <span class="reveal-box" data-start="0.2" data-end="0.52"></span>
+                  <span class="reveal-copy">Materials &amp; Safety</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#case-studies">
+                <span class="text-mask nav-mask">
+                  <span class="reveal-box" data-start="0.26" data-end="0.58"></span>
+                  <span class="reveal-copy">Case Studies</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#careers">
+                <span class="text-mask nav-mask">
+                  <span class="reveal-box" data-start="0.32" data-end="0.64"></span>
+                  <span class="reveal-copy">Careers</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#newsroom">
+                <span class="text-mask nav-mask">
+                  <span class="reveal-box" data-start="0.38" data-end="0.7"></span>
+                  <span class="reveal-copy">Newsroom</span>
+                </span>
+              </a>
+            </li>
           </ul>
         </div>
 
         <div class="footer-links">
           <ul>
-            <li><a href="#">Link One</a></li>
-            <li><a href="#">Link One</a></li>
-            <li><a href="#">Link One</a></li>
-            <li><a href="#">Link One</a></li>
-            <li><a href="#">Link One</a></li>
-            <li><a href="#">Link One</a></li>
-            <li><a href="#">Link One</a></li>
+            <li>
+              <a href="#catalog">
+                <span class="text-mask nav-mask">
+                  <span class="reveal-box" data-start="0.04" data-end="0.36"></span>
+                  <span class="reveal-copy">Product Catalog</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#composting-guide">
+                <span class="text-mask nav-mask">
+                  <span class="reveal-box" data-start="0.1" data-end="0.42"></span>
+                  <span class="reveal-copy">Composting Guide</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#specs">
+                <span class="text-mask nav-mask">
+                  <span class="reveal-box" data-start="0.16" data-end="0.48"></span>
+                  <span class="reveal-copy">Packaging Specs</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#branding">
+                <span class="text-mask nav-mask">
+                  <span class="reveal-box" data-start="0.22" data-end="0.54"></span>
+                  <span class="reveal-copy">Custom Branding</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#faq">
+                <span class="text-mask nav-mask">
+                  <span class="reveal-box" data-start="0.28" data-end="0.6"></span>
+                  <span class="reveal-copy">FAQ</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#contact">
+                <span class="text-mask nav-mask">
+                  <span class="reveal-box" data-start="0.34" data-end="0.66"></span>
+                  <span class="reveal-copy">Contact Sales</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="#support">
+                <span class="text-mask nav-mask">
+                  <span class="reveal-box" data-start="0.4" data-end="0.72"></span>
+                  <span class="reveal-copy">Support Center</span>
+                </span>
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -171,22 +494,78 @@
             />
           </div>
           <div class="address-info">
-            <h4>Address:</h4>
-            <p>Level 1, 12 Sample St., Sydney NSW 2000</p>
+            <h4>
+              <span class="text-mask text-mask-fluid">
+                <span class="reveal-box" data-start="0.3" data-end="0.7"></span>
+                <span class="reveal-copy">Address:</span>
+              </span>
+            </h4>
+            <p>
+              <span class="text-mask text-mask-fluid">
+                <span
+                  class="reveal-box"
+                  data-start="0.36"
+                  data-end="0.82"
+                ></span>
+                <span class="reveal-copy"
+                  >Level 1, 12 Sample St., Sydney NSW 2000</span
+                >
+              </span>
+            </p>
           </div>
           <div class="contact-info">
-            <h4>Contact:</h4>
-            <p>1800 123 4567</p>
+            <h4>
+              <span class="text-mask text-mask-fluid">
+                <span
+                  class="reveal-box"
+                  data-start="0.48"
+                  data-end="0.82"
+                ></span>
+                <span class="reveal-copy">Contact:</span>
+              </span>
+            </h4>
+            <p>
+              <span class="text-mask text-mask-fluid">
+                <span
+                  class="reveal-box"
+                  data-start="0.6"
+                  data-end="0.98"
+                ></span>
+                <span class="reveal-copy">1800 123 4567</span>
+              </span>
+            </p>
           </div>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2023 Relume. All rights reserved.</p>
+        <p>
+          <span class="text-mask text-mask-fluid">
+            <span class="reveal-box" data-start="0.0" data-end="0.48"></span>
+            <span class="reveal-copy"
+              >&copy; 2023 Relume. All rights reserved.</span
+            >
+          </span>
+        </p>
         <div class="legal-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
-          <a href="#">Cookies Settings</a>
+          <a href="#">
+            <span class="text-mask nav-mask">
+              <span class="reveal-box" data-start="0.08" data-end="0.42"></span>
+              <span class="reveal-copy">Privacy Policy</span>
+            </span>
+          </a>
+          <a href="#">
+            <span class="text-mask nav-mask">
+              <span class="reveal-box" data-start="0.16" data-end="0.5"></span>
+              <span class="reveal-copy">Terms of Service</span>
+            </span>
+          </a>
+          <a href="#">
+            <span class="text-mask nav-mask">
+              <span class="reveal-box" data-start="0.24" data-end="0.58"></span>
+              <span class="reveal-copy">Cookies Settings</span>
+            </span>
+          </a>
         </div>
       </div>
     </footer>

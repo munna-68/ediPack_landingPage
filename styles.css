@@ -5,6 +5,8 @@
   --green-light: #cbe792;
   --black: #000000;
   --white: #ffffff;
+  --reveal-box-color: #ffffff;
+  --preloader-box-color: #ffffff;
 
   --font-heading: "IBM Plex Sans", sans-serif;
   --font-body: "IBM Plex Sans", sans-serif;
@@ -29,6 +31,11 @@ body {
   color: var(--black);
   line-height: 1.5;
   overflow-x: hidden;
+}
+
+body.is-preloading {
+  overflow: hidden;
+  background: var(--black);
 }
 
 h1,
@@ -69,6 +76,116 @@ img {
   transition: all 0.2s ease;
   border: 1px solid transparent;
   font-size: 14px;
+}
+
+/* Text and media reveal primitives */
+.text-mask {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  max-width: 100%;
+  padding-bottom: 0.08em;
+}
+
+.text-mask-fluid {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.hero-line {
+  display: block;
+  width: fit-content;
+}
+
+.hero-line + .hero-line {
+  margin-top: 0.08em;
+}
+
+.reveal-copy {
+  position: relative;
+  z-index: 1;
+  display: inline;
+}
+
+.text-mask-fluid .reveal-copy {
+  display: block;
+}
+
+.reveal-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--reveal-box-color);
+  z-index: 2;
+  pointer-events: none;
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+}
+
+.feature-light,
+footer {
+  --reveal-box-color: #000000;
+}
+
+.preloader {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--black);
+  z-index: 1000;
+  will-change: transform;
+  transition: transform 1.2s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.preloader.is-hidden {
+  transform: translate3d(0, -100%, 0);
+}
+
+.preloader-label {
+  color: var(--white);
+  font-size: 0.85rem;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.preloader-reveal-box {
+  background-color: var(--preloader-box-color);
+  transition: transform 1.2s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.media-mask {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.media-mask img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.nav-mask,
+.button-mask {
+  display: inline-block;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.button-mask {
+  padding-bottom: 0;
+}
+
+[data-scroll-reveal] {
+  position: relative;
 }
 
 /* Header */
@@ -198,7 +315,7 @@ header nav a {
   margin-bottom: 24px;
 }
 
-.hero-content p {
+.hero-subcopy {
   font-size: 1.1rem;
   margin-bottom: 40px;
   font-weight: 300;
@@ -336,6 +453,11 @@ header nav a {
   border-radius: 8px; /* Optional slight rounding depending on design exactness */
 }
 
+.feature-image-right .media-mask,
+.feature-image-right .media-mask .reveal-box {
+  border-radius: 8px;
+}
+
 /* Footer */
 footer {
   background-color: var(--white);
@@ -438,13 +560,72 @@ footer {
 /* Responsiveness adjustments */
 @media (max-width: 1024px) {
   .feature-dark .feature-text,
-  .feature-split,
+  .feature-split-container,
   .footer-top {
     grid-template-columns: 1fr;
     gap: 40px;
   }
 
+  .hero-content h1 {
+    font-size: clamp(2.8rem, 7vw, 3.6rem);
+  }
+
   header nav {
     display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 24px;
+    gap: 16px;
+  }
+
+  .header-actions {
+    display: none;
+  }
+
+  .preloader-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
+    padding: 0 24px;
+    text-align: center;
+  }
+
+  .hero,
+  .feature-dark,
+  .product-highlight,
+  .feature-light,
+  .feature-split,
+  footer {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .hero-content {
+    padding-top: 120px;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(2.2rem, 9vw, 3rem);
+  }
+
+  .feature-dark h2,
+  .feature-light h2 {
+    font-size: clamp(2rem, 8vw, 2.6rem);
+  }
+
+  .feature-block h3 {
+    font-size: clamp(1.6rem, 7vw, 2rem);
+  }
+
+  .product-highlight {
+    margin-top: -90px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-box {
+    transform: translate3d(-101%, 0, 0) !important;
   }
 }
