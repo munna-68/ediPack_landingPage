@@ -981,6 +981,484 @@ footer {
   }
 }
 
+/* New additions: multi-page layouts */
+.btn-primary {
+  background-color: var(--green-main);
+  color: var(--white);
+  border-color: var(--green-main);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--green-main);
+  border: 1px solid var(--green-main);
+  font-weight: 400;
+}
+
+.page-banner,
+.signup-shell {
+  background: linear-gradient(
+    135deg,
+    rgba(7, 16, 13, 0.96) 0%,
+    rgba(15, 35, 30, 0.95) 58%,
+    rgba(74, 118, 65, 0.9) 100%
+  );
+  color: var(--white);
+}
+
+.page-banner {
+  padding: clamp(8rem, 15vw, 10rem) var(--section-pad-x)
+    clamp(3rem, 7vw, 4.25rem);
+}
+
+.page-banner-inner {
+  max-width: var(--content-max);
+  margin: 0 auto;
+}
+
+.page-banner h1 {
+  font-size: clamp(2.25rem, 4.8vw, 3.5rem);
+  margin-bottom: 14px;
+}
+
+.page-banner p {
+  max-width: 64ch;
+  font-size: 1.05rem;
+  opacity: 0.92;
+}
+
+.page-banner .hero-buttons {
+  margin-top: 30px;
+}
+
+.page-banner .btn-outline,
+.page-section-dark .btn-outline,
+.service-block-dark .btn-outline {
+  color: var(--white);
+  border-color: rgba(255, 255, 255, 0.85);
+}
+
+.page-section {
+  padding: var(--section-pad-y) var(--section-pad-x);
+}
+
+.page-section-light {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.page-section-dark {
+  background-color: var(--green-main);
+  color: var(--white);
+}
+
+.page-section-inner {
+  max-width: var(--content-max);
+  margin: 0 auto;
+}
+
+.section-heading {
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  margin-bottom: 28px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.product-card {
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background-color: #fefefe;
+}
+
+.product-card h3 {
+  font-size: 1.3rem;
+}
+
+.product-card p {
+  font-size: 0.98rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.product-card .btn {
+  margin-top: auto;
+  width: fit-content;
+}
+
+.product-image-frame {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.placeholder-image {
+  width: 100%;
+  display: block;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+  background-color: #dfdfdf;
+}
+
+.service-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.service-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+  padding: clamp(1.4rem, 3vw, 2rem);
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.service-block-reverse .service-block-copy {
+  order: 2;
+}
+
+.service-block-reverse .service-block-media {
+  order: 1;
+}
+
+.service-block h2 {
+  font-size: clamp(1.6rem, 2.8vw, 2.1rem);
+  margin-bottom: 14px;
+}
+
+.service-block p {
+  margin-bottom: 22px;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.service-block-dark {
+  background-color: var(--green-main);
+  color: var(--white);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.service-block-dark .placeholder-image {
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+.mission-block {
+  max-width: 900px;
+}
+
+.mission-block h2 {
+  font-size: clamp(1.9rem, 3.7vw, 2.7rem);
+  margin-bottom: 18px;
+}
+
+.mission-block p {
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: #2f2f2f;
+}
+
+.value-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.value-card {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.value-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.value-card p {
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.team-card {
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.team-card h3 {
+  margin-top: 14px;
+  margin-bottom: 6px;
+  font-size: 1.15rem;
+}
+
+.team-card p {
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.faq-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.faq-category h2 {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  margin-bottom: 16px;
+}
+
+.faq-item {
+  border: 1px solid #dfdfdf;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.faq-item + .faq-item {
+  margin-top: 10px;
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0;
+  background: transparent;
+  padding: 16px 18px;
+  text-align: left;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1a1a1a;
+  cursor: pointer;
+}
+
+.faq-icon {
+  color: var(--green-main);
+  font-size: 1.3rem;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s ease;
+}
+
+.faq-answer p {
+  padding: 0 18px 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.faq-item.is-open .faq-answer {
+  max-height: 260px;
+}
+
+.faq-item.is-open .faq-icon {
+  transform: rotate(45deg);
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: minmax(250px, 0.9fr) minmax(0, 1.4fr);
+  gap: 26px;
+}
+
+.contact-details {
+  background-color: var(--green-main);
+  color: var(--white);
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.contact-details h2 {
+  font-size: 1.8rem;
+  margin-bottom: 22px;
+}
+
+.contact-detail-item + .contact-detail-item {
+  margin-top: 20px;
+}
+
+.contact-detail-item h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.contact-detail-item p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.contact-form-wrap {
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.contact-form-wrap h2 {
+  font-size: 1.8rem;
+  margin-bottom: 18px;
+}
+
+.contact-form,
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-form label,
+.signup-form label {
+  font-size: 0.92rem;
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.signup-form input {
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  padding: 11px 12px;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.signup-form input:focus {
+  outline: none;
+  border-color: var(--green-main);
+  box-shadow: 0 0 0 3px rgba(74, 118, 65, 0.14);
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.signup-shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: clamp(7.75rem, 14vw, 9.5rem) var(--section-pad-x)
+    clamp(3.5rem, 9vw, 5.5rem);
+}
+
+.signup-card {
+  width: min(100%, 540px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  padding: clamp(1.3rem, 3.2vw, 2.1rem);
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.signup-card h1 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  margin-bottom: 10px;
+}
+
+.signup-card p {
+  margin-bottom: 16px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.signup-form .btn {
+  margin-top: 12px;
+}
+
+.form-feedback {
+  min-height: 1.2em;
+  margin-top: 6px;
+  font-size: 0.9rem;
+  color: var(--green-main);
+}
+
+.signup-card .form-feedback {
+  color: var(--green-light);
+}
+
+.form-feedback.is-error {
+  color: #c43333;
+}
+
+.signup-link-row {
+  margin-top: 12px;
+  font-size: 0.95rem;
+}
+
+.signup-login-link {
+  color: var(--green-light);
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .product-grid,
+  .value-grid,
+  .team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .service-block {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .service-block-reverse .service-block-copy,
+  .service-block-reverse .service-block-media {
+    order: initial;
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-banner {
+    padding-top: clamp(6.75rem, 20vw, 8.2rem);
+  }
+
+  .page-banner .hero-buttons .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .product-grid,
+  .value-grid,
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .signup-card {
+    background: rgba(0, 0, 0, 0.48);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .reveal-box {
     transform: translate3d(-101%, 0, 0) !important;

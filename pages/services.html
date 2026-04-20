@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>EdiPack - Eco-Friendly Food Packaging</title>
+    <title>EdiPack - Services</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../styles.css" />
   </head>
   <body>
     <!-- Preloader -->
@@ -24,8 +24,8 @@
     <!-- Header / Navigation -->
     <header data-load-reveal>
       <div class="logo">
-        <a href="index.html" aria-label="Go to EdiPack home page">
-          <img src="images/logo-2x.png" alt="EdiPack Logo" />
+        <a href="../index.html" aria-label="Go to EdiPack home page">
+          <img src="../images/logo-2x.png" alt="EdiPack Logo" />
         </a>
       </div>
       <button
@@ -42,7 +42,7 @@
       <nav>
         <ul>
           <li>
-            <a href="pages/about.html">
+            <a href="about.html">
               <span class="text-mask nav-mask">
                 <span
                   class="reveal-box"
@@ -54,7 +54,7 @@
             </a>
           </li>
           <li>
-            <a href="pages/products.html">
+            <a href="products.html">
               <span class="text-mask nav-mask">
                 <span
                   class="reveal-box"
@@ -66,7 +66,7 @@
             </a>
           </li>
           <li>
-            <a href="pages/services.html">
+            <a href="services.html">
               <span class="text-mask nav-mask">
                 <span
                   class="reveal-box"
@@ -78,7 +78,7 @@
             </a>
           </li>
           <li>
-            <a href="pages/faq.html">
+            <a href="faq.html">
               <span class="text-mask nav-mask">
                 <span
                   class="reveal-box"
@@ -92,13 +92,13 @@
         </ul>
       </nav>
       <div class="header-actions">
-        <a href="pages/contact.html" class="btn">
+        <a href="contact.html" class="btn">
           <span class="text-mask button-mask">
             <span class="reveal-box" data-start="0.0" data-end="0.42"></span>
             <span class="reveal-copy">Contact</span>
           </span>
         </a>
-        <a href="pages/signup.html" class="btn btn-primary">
+        <a href="signup.html" class="btn btn-primary">
           <span class="text-mask button-mask">
             <span class="reveal-box" data-start="0.12" data-end="0.54"></span>
             <span class="reveal-copy">Sign Up</span>
@@ -119,262 +119,111 @@
         </button>
         <p class="mobile-menu-label">Navigate</p>
         <ul class="mobile-menu-links">
-          <li><a href="pages/about.html">About Us</a></li>
-          <li><a href="pages/products.html">Products</a></li>
-          <li><a href="pages/services.html">Services</a></li>
-          <li><a href="pages/faq.html">FAQ</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="faq.html">FAQ</a></li>
         </ul>
         <div class="mobile-menu-actions">
-          <a href="pages/contact.html" class="btn">Contact</a>
-          <a href="pages/signup.html" class="btn btn-primary">Sign Up</a>
+          <a href="contact.html" class="btn">Contact</a>
+          <a href="signup.html" class="btn btn-primary">Sign Up</a>
         </div>
       </div>
     </div>
 
     <!-- Main Content -->
     <main>
-      <!-- Hero Section -->
-      <section class="hero">
+      <section class="hero" id="services">
         <div class="hero-container">
           <div class="hero-content" data-load-reveal>
-            <h1 class="hero-title">
-              <span class="text-mask hero-line">
-                <span
-                  class="reveal-box"
-                  data-start="0.0"
-                  data-end="0.42"
-                ></span>
-                <span class="reveal-copy">Join the Green Revolution</span>
-              </span>
-              <span class="text-mask hero-line">
-                <span
-                  class="reveal-box"
-                  data-start="0.12"
-                  data-end="0.6"
-                ></span>
-                <span class="reveal-copy">with EdiPack</span>
-              </span>
-            </h1>
+            <h1 class="hero-title">Services Built for Sustainable Growth</h1>
             <p class="hero-subcopy">
-              <span class="text-mask text-mask-fluid">
-                <span
-                  class="reveal-box"
-                  data-start="0.4"
-                  data-end="0.92"
-                ></span>
-                <span class="reveal-copy">
-                  Discover our eco-friendly, durable, and compostable food
-                  containers that make a difference in the world.
-                </span>
-              </span>
+              From packaging consultation to custom development support, EdiPack
+              helps food brands move to compostable formats with confidence.
             </p>
             <div class="hero-buttons">
-              <a href="products.html#product-grid" class="btn btn-primary">
-                <span class="text-mask button-mask">
-                  <span
-                    class="reveal-box"
-                    data-start="0.0"
-                    data-end="0.44"
-                  ></span>
-                  <span class="reveal-copy">Learn More</span>
-                </span>
-              </a>
-              <a href="pages/signup.html" class="btn btn-outline">
-                <span class="text-mask button-mask">
-                  <span
-                    class="reveal-box"
-                    data-start="0.14"
-                    data-end="0.58"
-                  ></span>
-                  <span class="reveal-copy">Sign Up</span>
-                </span>
-              </a>
+              <a href="#service-blocks" class="btn btn-primary"
+                >View Services</a
+              >
+              <a href="contact.html#contact" class="btn btn-outline"
+                >Book Consultation</a
+              >
             </div>
           </div>
         </div>
         <div class="hero-image">
-          <img src="images/hero-img.jpg" alt="EdiPack food containers" />
-        </div>
-      </section>
-
-      <!-- Feature Section 1 -->
-      <section
-        class="feature-dark"
-        data-scroll-reveal
-        data-reveal-duration="1250"
-      >
-        <div class="feature-text">
-          <h2>
-            <span class="text-mask text-mask-fluid">
-              <span class="reveal-box" data-start="0.0" data-end="0.55"></span>
-              <span class="reveal-copy">
-                EdiPack: The Eco-Friendly Solution for Sustainable Food
-                Packaging
-              </span>
-            </span>
-          </h2>
-          <p>
-            <span class="text-mask text-mask-fluid">
-              <span class="reveal-box" data-start="0.22" data-end="0.9"></span>
-              <span class="reveal-copy">
-                Discover the innovative design and usability of EdiPack
-                containers. Made from compostable materials, they not only
-                reduce waste but also enrich soil after use.
-              </span>
-            </span>
-          </p>
-        </div>
-      </section>
-
-      <!-- Product Highlight Image -->
-      <section
-        class="product-highlight"
-        data-scroll-reveal
-        data-reveal-duration="1050"
-      >
-        <div class="media-mask">
-          <span class="reveal-box" data-start="0.0" data-end="0.72"></span>
           <img
-            src="images/box-with-lid-on_2x.jpg"
-            alt="Blue EdiPack container"
+            src="../images/box-with-lid-open_2x.jpg"
+            alt="EdiPack service and packaging support"
           />
         </div>
       </section>
 
-      <!-- Feature Section 2 -->
-      <section
-        class="feature-light"
-        data-scroll-reveal
-        data-reveal-duration="1200"
-      >
-        <h2>
-          <span class="text-mask text-mask-fluid">
-            <span class="reveal-box" data-start="0.0" data-end="0.48"></span>
-            <span class="reveal-copy">Join the Green Revolution</span>
-          </span>
-        </h2>
-        <p>
-          <span class="text-mask text-mask-fluid">
-            <span class="reveal-box" data-start="0.2" data-end="0.86"></span>
-            <span class="reveal-copy">
-              Explore our eco-friendly and compostable food containers that make
-              a positive impact on the environment.
-            </span>
-          </span>
-        </p>
-        <div class="feature-buttons">
-          <a href="products.html#product-grid" class="btn btn-primary">
-            <span class="text-mask button-mask">
-              <span class="reveal-box" data-start="0.0" data-end="0.44"></span>
-              <span class="reveal-copy">Learn More</span>
-            </span>
-          </a>
-          <a href="pages/signup.html" class="btn btn-outline">
-            <span class="text-mask button-mask">
-              <span class="reveal-box" data-start="0.14" data-end="0.58"></span>
-              <span class="reveal-copy">Sign Up</span>
-            </span>
-          </a>
-        </div>
-      </section>
-
-      <!-- Feature Section 3 (Split Layout) -->
-      <section
-        class="feature-split"
-        data-scroll-reveal
-        data-reveal-duration="1650"
-      >
-        <div class="feature-split-container">
-          <div class="feature-content-left">
-            <div class="feature-block">
-              <h3>
-                <span class="text-mask text-mask-fluid">
-                  <span
-                    class="reveal-box"
-                    data-start="0.0"
-                    data-end="0.32"
-                  ></span>
-                  <span class="reveal-copy"
-                    >Eco-friendly Packaging Solution</span
-                  >
-                </span>
-              </h3>
+      <section class="page-section page-section-light" id="service-blocks">
+        <div class="page-section-inner service-blocks">
+          <article class="service-block">
+            <div class="service-block-copy">
+              <h2>Packaging Transition Planning</h2>
               <p>
-                <span class="text-mask text-mask-fluid">
-                  <span
-                    class="reveal-box"
-                    data-start="0.08"
-                    data-end="0.45"
-                  ></span>
-                  <span class="reveal-copy">
-                    EdiPack offers a range of eco-friendly, durable, and
-                    compostable food containers. Join the green revolution and
-                    make a difference with our sustainable packaging solution.
-                  </span>
-                </span>
+                We audit current packaging footprints and map a practical,
+                low-disruption shift to compostable alternatives across your
+                menu.
               </p>
+              <a href="contact.html#contact" class="btn btn-primary"
+                >Talk to a Specialist</a
+              >
             </div>
-            <div class="feature-block">
-              <h3>
-                <span class="text-mask text-mask-fluid">
-                  <span
-                    class="reveal-box"
-                    data-start="0.22"
-                    data-end="0.56"
-                  ></span>
-                  <span class="reveal-copy">High-Quality Materials</span>
-                </span>
-              </h3>
-              <p>
-                <span class="text-mask text-mask-fluid">
-                  <span
-                    class="reveal-box"
-                    data-start="0.3"
-                    data-end="0.66"
-                  ></span>
-                  <span class="reveal-copy">
-                    Our food containers are made from high-quality compostable
-                    materials, ensuring both functionality and sustainability.
-                  </span>
-                </span>
-              </p>
-            </div>
-            <div class="feature-block">
-              <h3>
-                <span class="text-mask text-mask-fluid">
-                  <span
-                    class="reveal-box"
-                    data-start="0.42"
-                    data-end="0.78"
-                  ></span>
-                  <span class="reveal-copy">Versatile Design</span>
-                </span>
-              </h3>
-              <p>
-                <span class="text-mask text-mask-fluid">
-                  <span
-                    class="reveal-box"
-                    data-start="0.55"
-                    data-end="0.94"
-                  ></span>
-                  <span class="reveal-copy">
-                    With a versatile design, our containers are suitable for
-                    various food types and can be used for both hot and cold
-                    items.
-                  </span>
-                </span>
-              </p>
-            </div>
-          </div>
-          <div class="feature-image-right">
-            <div class="media-mask">
-              <span class="reveal-box" data-start="0.16" data-end="0.84"></span>
+            <div class="service-block-media">
               <img
-                src="images/box-with-lid-open_2x.jpg"
-                alt="EdiPack container with healthy food"
+                class="placeholder-image"
+                src="../images/type-of-boxes/type4.png"
+                alt="Placeholder image for packaging transition planning service"
               />
             </div>
-          </div>
+          </article>
+
+          <article
+            class="service-block service-block-dark service-block-reverse"
+          >
+            <div class="service-block-copy">
+              <h2>Custom Fit & Branding</h2>
+              <p>
+                Need specific dimensions or visual branding? We support artwork,
+                print guidance, and prototype cycles tailored to your
+                operations.
+              </p>
+              <a href="contact.html#contact" class="btn btn-outline"
+                >Start a Custom Brief</a
+              >
+            </div>
+            <div class="service-block-media">
+              <img
+                class="placeholder-image"
+                src="../images/type-of-boxes/type%205.png"
+                alt="Placeholder image for custom fit and branding service"
+              />
+            </div>
+          </article>
+
+          <article class="service-block">
+            <div class="service-block-copy">
+              <h2>Supply & Reorder Support</h2>
+              <p>
+                We help teams set practical stock thresholds and reorder rhythms
+                to maintain continuity during seasonal volume changes.
+              </p>
+              <a href="contact.html#contact" class="btn btn-primary"
+                >Set Up Reorder Support</a
+              >
+            </div>
+            <div class="service-block-media">
+              <img
+                class="placeholder-image"
+                src="../images/type-of-boxes/type%206.png"
+                alt="Placeholder image for supply and reorder support service"
+              />
+            </div>
+          </article>
         </div>
       </section>
     </main>
@@ -383,7 +232,7 @@
     <footer data-scroll-reveal data-reveal-duration="1300">
       <div class="footer-top">
         <div class="footer-brand">
-          <img src="images/logo-2x.png" alt="EdiPack Logo" />
+          <img src="../images/logo-2x.png" alt="EdiPack Logo" />
           <p class="brand-slogan">
             <span class="text-mask text-mask-fluid">
               <span class="reveal-box" data-start="0.0" data-end="0.55"></span>
@@ -398,7 +247,7 @@
         <div class="footer-links">
           <ul>
             <li>
-              <a href="pages/about.html">
+              <a href="about.html">
                 <span class="text-mask nav-mask">
                   <span
                     class="reveal-box"
@@ -470,7 +319,7 @@
               </a>
             </li>
             <li>
-              <a href="index.html">
+              <a href="../index.html">
                 <span class="text-mask nav-mask">
                   <span
                     class="reveal-box"
@@ -487,7 +336,7 @@
         <div class="footer-links">
           <ul>
             <li>
-              <a href="pages/products.html">
+              <a href="products.html">
                 <span class="text-mask nav-mask">
                   <span
                     class="reveal-box"
@@ -499,7 +348,7 @@
               </a>
             </li>
             <li>
-              <a href="pages/faq.html">
+              <a href="faq.html">
                 <span class="text-mask nav-mask">
                   <span
                     class="reveal-box"
@@ -535,7 +384,7 @@
               </a>
             </li>
             <li>
-              <a href="pages/faq.html">
+              <a href="faq.html">
                 <span class="text-mask nav-mask">
                   <span
                     class="reveal-box"
@@ -547,7 +396,7 @@
               </a>
             </li>
             <li>
-              <a href="pages/contact.html">
+              <a href="contact.html">
                 <span class="text-mask nav-mask">
                   <span
                     class="reveal-box"
@@ -559,7 +408,7 @@
               </a>
             </li>
             <li>
-              <a href="pages/contact.html">
+              <a href="contact.html">
                 <span class="text-mask nav-mask">
                   <span
                     class="reveal-box"
@@ -576,7 +425,7 @@
         <div class="footer-contact">
           <div class="social-icons">
             <img
-              src="images/social-logo-pack_2x.png"
+              src="../images/social-logo-pack_2x.png"
               alt="Social Media Links"
               style="
                 height: 30px;
@@ -663,6 +512,6 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
   </body>
 </html>
