@@ -720,8 +720,7 @@ footer {
   font-weight: 200;
 }
 
-.footer-bottom .legal-links a:first-child,
-.footer-bottom .legal-links a:nth-child(2) {
+.footer-bottom .legal-links a {
   font-weight: 500;
 }
 
